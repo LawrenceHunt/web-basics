@@ -3,9 +3,13 @@ require 'sinatra'
 set :session_secret, 'super secret'
 
 get '/' do
-  "Hello World"
+  "Hello again!"
 end
 
 get '/secret' do
-  "I did it myyyyyyyy way!"
+  "shhhhh....!"
+end
+
+get '/cat' do
+  erb(:index)
 end
