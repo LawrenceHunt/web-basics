@@ -16,7 +16,7 @@ get '/random_cat' do
 end
 
 get '/named_cat' do
-  print params
+  puts params
   @random_name = params[:name]
   @colour = params[:colour]
   @adorable = true
